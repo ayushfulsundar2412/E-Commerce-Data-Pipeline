@@ -1,0 +1,1300 @@
+[0m10:49:03.176220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A039972EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A03AC2E290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A03AC2F190>]}
+
+
+============================== 10:49:03.181344 | 1229215c-dd93-40ac-a4c4-f84446cd52b1 ==============================
+[0m10:49:03.181344 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:49:03.181344 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ayush\\.dbt', 'log_path': 'C:\\Users\\ayush\\OneDrive\\Desktop\\E-Commerce Project(Airflow+Snowflake+dbt)\\dbt_ecommerce\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:49:05.341289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1229215c-dd93-40ac-a4c4-f84446cd52b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A05B671BD0>]}
+[0m10:49:05.397181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1229215c-dd93-40ac-a4c4-f84446cd52b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A05B61AEF0>]}
+[0m10:49:05.397181 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m10:49:05.894149 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m10:49:05.894149 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:49:05.901456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1229215c-dd93-40ac-a4c4-f84446cd52b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A05B8509A0>]}
+[0m10:49:08.591210 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ecommerce_project.order_status' (models\marts\order_status.sql) depends on a node named 'stg_orders' which was not found
+[0m10:49:08.594620 [debug] [MainThread]: Command `dbt run` failed at 10:49:08.594620 after 5.55 seconds
+[0m10:49:08.596834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A039972EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A05BD96200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A05BD961A0>]}
+[0m10:49:08.596834 [debug] [MainThread]: Flushing usage events
+[0m10:49:09.727986 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:51:50.313638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022919872E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002291AB2F640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002291AB2EFE0>]}
+
+
+============================== 10:51:50.315175 | ff33e4bd-9296-43af-bc20-8b6bc3f0b835 ==============================
+[0m10:51:50.315175 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:51:50.315175 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ayush\\.dbt', 'version_check': 'True', 'warn_error': 'False', 'log_path': 'C:\\Users\\ayush\\OneDrive\\Desktop\\E-Commerce Project(Airflow+Snowflake+dbt)\\dbt_ecommerce\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:51:51.586585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ff33e4bd-9296-43af-bc20-8b6bc3f0b835', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002293B573940>]}
+[0m10:51:51.649604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ff33e4bd-9296-43af-bc20-8b6bc3f0b835', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002291ABAE650>]}
+[0m10:51:51.649604 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m10:51:52.084362 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m10:51:52.084362 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:51:52.084362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ff33e4bd-9296-43af-bc20-8b6bc3f0b835', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002293B750700>]}
+[0m10:51:52.888297 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ecommerce_project.order_status' (models\marts\order_status.sql) depends on a node named 'stg_orders' which was not found
+[0m10:51:52.888297 [debug] [MainThread]: Command `dbt run` failed at 10:51:52.888297 after 2.67 seconds
+[0m10:51:52.888297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022919872E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002293BC91D20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002293BC91CC0>]}
+[0m10:51:52.888297 [debug] [MainThread]: Flushing usage events
+[0m10:51:53.910800 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:55:21.398591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115BDFC2E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115BF283F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115BF2801C0>]}
+
+
+============================== 10:55:21.414445 | a6bf4596-8124-4bf8-ab07-9fe9524d2c42 ==============================
+[0m10:55:21.414445 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:55:21.414445 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'False', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\ayush\\OneDrive\\Desktop\\E-Commerce Project(Airflow+Snowflake+dbt)\\dbt_ecommerce\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\ayush\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:55:22.687744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a6bf4596-8124-4bf8-ab07-9fe9524d2c42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115BF0697E0>]}
+[0m10:55:22.743751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a6bf4596-8124-4bf8-ab07-9fe9524d2c42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115DFC69E70>]}
+[0m10:55:22.744786 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m10:55:23.218703 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m10:55:23.218703 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:55:23.218703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a6bf4596-8124-4bf8-ab07-9fe9524d2c42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115DFEA28F0>]}
+[0m10:55:24.128154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a6bf4596-8124-4bf8-ab07-9fe9524d2c42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115E046D0C0>]}
+[0m10:55:24.189816 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m10:55:24.237152 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m10:55:24.284656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a6bf4596-8124-4bf8-ab07-9fe9524d2c42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115E0445CF0>]}
+[0m10:55:24.284656 [info ] [MainThread]: Found 4 models, 477 macros
+[0m10:55:24.291640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a6bf4596-8124-4bf8-ab07-9fe9524d2c42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115E0446770>]}
+[0m10:55:24.293652 [info ] [MainThread]: 
+[0m10:55:24.293652 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:55:24.293652 [info ] [MainThread]: 
+[0m10:55:24.296305 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:55:24.303940 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB'
+[0m10:55:24.503734 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB"
+[0m10:55:24.503734 [debug] [ThreadPool]: On list_ECOMMERCE_DB: show terse schemas in database ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB"} */
+[0m10:55:24.503734 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:55:25.454361 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.950 seconds
+[0m10:55:25.460386 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB_analytics'
+[0m10:55:25.474640 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB_analytics"
+[0m10:55:25.474640 [debug] [ThreadPool]: On list_ECOMMERCE_DB_analytics: show objects in ECOMMERCE_DB.analytics
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB_analytics"} */;
+[0m10:55:25.477417 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:55:25.902760 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.434 seconds
+[0m10:55:25.902760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a6bf4596-8124-4bf8-ab07-9fe9524d2c42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115BC993670>]}
+[0m10:55:25.919721 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_orders
+[0m10:55:25.919721 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics.stg_orders ............................... [RUN]
+[0m10:55:25.919721 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ecommerce_project.stg_orders'
+[0m10:55:25.919721 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_orders
+[0m10:55:25.919721 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_orders"
+[0m10:55:25.937855 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_orders
+[0m10:55:25.966323 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_orders"
+[0m10:55:25.971551 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_orders"
+[0m10:55:25.973293 [debug] [Thread-1 (]: On model.ecommerce_project.stg_orders: create or replace   view ECOMMERCE_DB.analytics.stg_orders
+  
+  
+  
+  
+  as (
+    da
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_orders"} */;
+[0m10:55:25.973293 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:55:26.445291 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be1da5-0001-5e1a-0000-000b57ce3939
+[0m10:55:26.445291 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 7 at position 4 unexpected 'da'.
+[0m10:55:26.461157 [debug] [Thread-1 (]: Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 4 unexpected 'da'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql
+[0m10:55:26.467055 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a6bf4596-8124-4bf8-ab07-9fe9524d2c42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115E1AE3130>]}
+[0m10:55:26.467055 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model analytics.stg_orders ...................... [[31mERROR[0m in 0.54s]
+[0m10:55:26.467055 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_orders
+[0m10:55:26.467055 [debug] [Thread-4 (]: Marking all children of 'model.ecommerce_project.stg_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 4 unexpected 'da'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql.
+[0m10:55:26.467055 [debug] [Thread-1 (]: Began running node model.ecommerce_project.order_status
+[0m10:55:26.467055 [info ] [Thread-1 (]: 2 of 2 SKIP relation analytics.order_status .................................... [[33mSKIP[0m]
+[0m10:55:26.467055 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.order_status
+[0m10:55:26.473189 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:55:26.473189 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB' was left open.
+[0m10:55:26.475197 [debug] [MainThread]: On list_ECOMMERCE_DB: Close
+[0m10:55:26.657333 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB_analytics' was left open.
+[0m10:55:26.657333 [debug] [MainThread]: On list_ECOMMERCE_DB_analytics: Close
+[0m10:55:26.863110 [debug] [MainThread]: Connection 'model.ecommerce_project.stg_orders' was left open.
+[0m10:55:26.863110 [debug] [MainThread]: On model.ecommerce_project.stg_orders: Close
+[0m10:55:27.069182 [info ] [MainThread]: 
+[0m10:55:27.071437 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 2.77 seconds (2.77s).
+[0m10:55:27.071437 [debug] [MainThread]: Command end result
+[0m10:55:27.182517 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m10:55:27.182517 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m10:55:27.182517 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\run_results.json
+[0m10:55:27.182517 [info ] [MainThread]: 
+[0m10:55:27.182517 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m10:55:27.182517 [info ] [MainThread]: 
+[0m10:55:27.182517 [error] [MainThread]: [31mFailure in model stg_orders (models\staging\stg_orders.sql)[0m
+[0m10:55:27.182517 [error] [MainThread]:   Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 4 unexpected 'da'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql
+[0m10:55:27.199164 [info ] [MainThread]: 
+[0m10:55:27.199619 [info ] [MainThread]:   compiled code at target\compiled\ecommerce_project\models\staging\stg_orders.sql
+[0m10:55:27.199619 [info ] [MainThread]: 
+[0m10:55:27.201950 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m10:55:27.201950 [debug] [MainThread]: Command `dbt run` failed at 10:55:27.201950 after 5.87 seconds
+[0m10:55:27.204469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115BDFC2E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115E1B21CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000115E1B21CC0>]}
+[0m10:55:27.204868 [debug] [MainThread]: Flushing usage events
+[0m10:55:28.407268 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:57:10.319096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B76A82E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B77DBFD60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B77DBFF40>]}
+
+
+============================== 10:57:10.323114 | bd29a5d6-baef-4c71-917a-8c9694da3922 ==============================
+[0m10:57:10.323114 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:57:10.323114 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ayush\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\ayush\\OneDrive\\Desktop\\E-Commerce Project(Airflow+Snowflake+dbt)\\dbt_ecommerce\\logs', 'version_check': 'True', 'warn_error': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:57:14.609719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bd29a5d6-baef-4c71-917a-8c9694da3922', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B187802B0>]}
+[0m10:57:14.657428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bd29a5d6-baef-4c71-917a-8c9694da3922', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B77BB2C20>]}
+[0m10:57:14.657428 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m10:57:15.302324 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m10:57:17.085914 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:57:17.087829 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:57:17.114369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bd29a5d6-baef-4c71-917a-8c9694da3922', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B18D9DF00>]}
+[0m10:57:17.161786 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m10:57:17.184902 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m10:57:17.223417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bd29a5d6-baef-4c71-917a-8c9694da3922', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B18DB3850>]}
+[0m10:57:17.223417 [info ] [MainThread]: Found 4 models, 477 macros
+[0m10:57:17.223417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bd29a5d6-baef-4c71-917a-8c9694da3922', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B18DB2FB0>]}
+[0m10:57:17.226938 [info ] [MainThread]: 
+[0m10:57:17.226938 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:57:17.226938 [info ] [MainThread]: 
+[0m10:57:17.226938 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:57:17.235046 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB'
+[0m10:57:20.471140 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB"
+[0m10:57:20.471140 [debug] [ThreadPool]: On list_ECOMMERCE_DB: show terse schemas in database ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB"} */
+[0m10:57:20.473151 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:57:21.037832 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.567 seconds
+[0m10:57:21.037832 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB_analytics'
+[0m10:57:21.045494 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB_analytics"
+[0m10:57:21.045494 [debug] [ThreadPool]: On list_ECOMMERCE_DB_analytics: show objects in ECOMMERCE_DB.analytics
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB_analytics"} */;
+[0m10:57:21.045494 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:57:21.467932 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.411 seconds
+[0m10:57:21.471450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bd29a5d6-baef-4c71-917a-8c9694da3922', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B18732470>]}
+[0m10:57:21.476613 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_orders
+[0m10:57:21.478139 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics.stg_orders ............................... [RUN]
+[0m10:57:21.478139 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ecommerce_project.stg_orders'
+[0m10:57:21.479675 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_orders
+[0m10:57:21.486767 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_orders"
+[0m10:57:21.488769 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_orders
+[0m10:57:21.530051 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_orders"
+[0m10:57:21.532060 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_orders"
+[0m10:57:21.532060 [debug] [Thread-1 (]: On model.ecommerce_project.stg_orders: create or replace   view ECOMMERCE_DB.analytics.stg_orders
+  
+  
+  
+  
+  as (
+    da
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_orders"} */;
+[0m10:57:21.534068 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:57:22.137654 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be1da7-0001-5e1b-0000-000b57ce26e5
+[0m10:57:22.137654 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 7 at position 4 unexpected 'da'.
+[0m10:57:22.151543 [debug] [Thread-1 (]: Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 4 unexpected 'da'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql
+[0m10:57:22.153308 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bd29a5d6-baef-4c71-917a-8c9694da3922', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B1A41FE20>]}
+[0m10:57:22.153308 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model analytics.stg_orders ...................... [[31mERROR[0m in 0.67s]
+[0m10:57:22.153308 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_orders
+[0m10:57:22.153308 [debug] [Thread-4 (]: Marking all children of 'model.ecommerce_project.stg_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 4 unexpected 'da'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql.
+[0m10:57:22.153308 [debug] [Thread-1 (]: Began running node model.ecommerce_project.order_status
+[0m10:57:22.153308 [info ] [Thread-1 (]: 2 of 2 SKIP relation analytics.order_status .................................... [[33mSKIP[0m]
+[0m10:57:22.153308 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.order_status
+[0m10:57:22.162674 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:57:22.163046 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB' was left open.
+[0m10:57:22.163046 [debug] [MainThread]: On list_ECOMMERCE_DB: Close
+[0m10:57:22.238998 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB_analytics' was left open.
+[0m10:57:22.238998 [debug] [MainThread]: On list_ECOMMERCE_DB_analytics: Close
+[0m10:57:22.307138 [debug] [MainThread]: Connection 'model.ecommerce_project.stg_orders' was left open.
+[0m10:57:22.307138 [debug] [MainThread]: On model.ecommerce_project.stg_orders: Close
+[0m10:57:22.413519 [info ] [MainThread]: 
+[0m10:57:22.413519 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 5.19 seconds (5.19s).
+[0m10:57:22.415527 [debug] [MainThread]: Command end result
+[0m10:57:22.443148 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m10:57:22.447085 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m10:57:22.456472 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\run_results.json
+[0m10:57:22.456472 [info ] [MainThread]: 
+[0m10:57:22.458681 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m10:57:22.458681 [info ] [MainThread]: 
+[0m10:57:22.458681 [error] [MainThread]: [31mFailure in model stg_orders (models\staging\stg_orders.sql)[0m
+[0m10:57:22.460875 [error] [MainThread]:   Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 4 unexpected 'da'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql
+[0m10:57:22.461921 [info ] [MainThread]: 
+[0m10:57:22.463539 [info ] [MainThread]:   compiled code at target\compiled\ecommerce_project\models\staging\stg_orders.sql
+[0m10:57:22.463539 [info ] [MainThread]: 
+[0m10:57:22.463539 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m10:57:22.467456 [debug] [MainThread]: Command `dbt run` failed at 10:57:22.467456 after 12.26 seconds
+[0m10:57:22.468599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B76A82E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B7489E110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B18DAFBB0>]}
+[0m10:57:22.469000 [debug] [MainThread]: Flushing usage events
+[0m10:57:23.912733 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:00:22.176571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C625022EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6262DE590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6262DEE00>]}
+
+
+============================== 11:00:22.193352 | e77fe3be-dfe0-4ae6-9673-1391f348eef4 ==============================
+[0m11:00:22.193352 [info ] [MainThread]: Running with dbt=1.10.6
+[0m11:00:22.194844 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ayush\\.dbt', 'fail_fast': 'False', 'warn_error': 'False', 'log_path': 'C:\\Users\\ayush\\OneDrive\\Desktop\\E-Commerce Project(Airflow+Snowflake+dbt)\\dbt_ecommerce\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:00:23.428396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e77fe3be-dfe0-4ae6-9673-1391f348eef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C646CEAE00>]}
+[0m11:00:23.476479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e77fe3be-dfe0-4ae6-9673-1391f348eef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C646D28040>]}
+[0m11:00:23.476479 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m11:00:23.950293 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m11:00:24.129703 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m11:00:24.129703 [debug] [MainThread]: Partial parsing: updated file: ecommerce_project://models\staging\stg_shipments.sql
+[0m11:00:24.131710 [debug] [MainThread]: Partial parsing: updated file: ecommerce_project://models\staging\stg_orders.sql
+[0m11:00:24.131710 [debug] [MainThread]: Partial parsing: updated file: ecommerce_project://models\staging\stg_customers.sql
+[0m11:00:24.332465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e77fe3be-dfe0-4ae6-9673-1391f348eef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6474B5E40>]}
+[0m11:00:24.374453 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m11:00:24.374453 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m11:00:24.409015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e77fe3be-dfe0-4ae6-9673-1391f348eef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6474B6140>]}
+[0m11:00:24.409015 [info ] [MainThread]: Found 4 models, 477 macros
+[0m11:00:24.409015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e77fe3be-dfe0-4ae6-9673-1391f348eef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6474B6350>]}
+[0m11:00:24.414744 [info ] [MainThread]: 
+[0m11:00:24.414744 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:00:24.414744 [info ] [MainThread]: 
+[0m11:00:24.414744 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:00:24.422324 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB'
+[0m11:00:24.501015 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB"
+[0m11:00:24.501015 [debug] [ThreadPool]: On list_ECOMMERCE_DB: show terse schemas in database ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB"} */
+[0m11:00:24.501015 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:00:25.218021 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.705 seconds
+[0m11:00:25.220642 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB_analytics'
+[0m11:00:25.226544 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB_analytics"
+[0m11:00:25.226544 [debug] [ThreadPool]: On list_ECOMMERCE_DB_analytics: show objects in ECOMMERCE_DB.analytics
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB_analytics"} */;
+[0m11:00:25.226544 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:00:25.525832 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.292 seconds
+[0m11:00:25.525832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e77fe3be-dfe0-4ae6-9673-1391f348eef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C646C895D0>]}
+[0m11:00:25.533658 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_customers
+[0m11:00:25.533658 [info ] [Thread-1 (]: 1 of 4 START sql view model analytics.stg_customers ............................ [RUN]
+[0m11:00:25.538784 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ecommerce_project.stg_customers'
+[0m11:00:25.538784 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_customers
+[0m11:00:25.546818 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_customers"
+[0m11:00:25.548825 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_customers
+[0m11:00:25.588847 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_customers"
+[0m11:00:25.591412 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_customers"
+[0m11:00:25.594039 [debug] [Thread-1 (]: On model.ecommerce_project.stg_customers: create or replace   view ECOMMERCE_DB.analytics.stg_customers
+  
+  
+  
+  
+  as (
+    select * from raw.customers
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_customers"} */;
+[0m11:00:25.594039 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:00:26.159612 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be1daa-0001-5e1a-0000-000b57ce3949
+[0m11:00:26.159612 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 8 at position 156 unexpected ';'.
+[0m11:00:26.163134 [debug] [Thread-1 (]: Database Error in model stg_customers (models\staging\stg_customers.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_customers.sql
+[0m11:00:26.163134 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e77fe3be-dfe0-4ae6-9673-1391f348eef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C623F0DB70>]}
+[0m11:00:26.166291 [error] [Thread-1 (]: 1 of 4 ERROR creating sql view model analytics.stg_customers ................... [[31mERROR[0m in 0.63s]
+[0m11:00:26.166291 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_customers
+[0m11:00:26.166291 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_orders
+[0m11:00:26.166291 [debug] [Thread-4 (]: Marking all children of 'model.ecommerce_project.stg_customers' to be skipped because of status 'error'.  Reason: Database Error in model stg_customers (models\staging\stg_customers.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_customers.sql.
+[0m11:00:26.166291 [info ] [Thread-1 (]: 2 of 4 START sql view model analytics.stg_orders ............................... [RUN]
+[0m11:00:26.171238 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_customers, now model.ecommerce_project.stg_orders)
+[0m11:00:26.171238 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_orders
+[0m11:00:26.177210 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_orders"
+[0m11:00:26.179154 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_orders
+[0m11:00:26.182474 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_orders"
+[0m11:00:26.182474 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_orders"
+[0m11:00:26.185662 [debug] [Thread-1 (]: On model.ecommerce_project.stg_orders: create or replace   view ECOMMERCE_DB.analytics.stg_orders
+  
+  
+  
+  
+  as (
+    select * from raw.orders
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_orders"} */;
+[0m11:00:26.269696 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be1daa-0001-5e1b-0000-000b57ce26e9
+[0m11:00:26.271704 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 8 at position 153 unexpected ';'.
+[0m11:00:26.271704 [debug] [Thread-1 (]: Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 153 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql
+[0m11:00:26.271704 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e77fe3be-dfe0-4ae6-9673-1391f348eef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C648B8B760>]}
+[0m11:00:26.274551 [error] [Thread-1 (]: 2 of 4 ERROR creating sql view model analytics.stg_orders ...................... [[31mERROR[0m in 0.10s]
+[0m11:00:26.274551 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_orders
+[0m11:00:26.276727 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_shipments
+[0m11:00:26.276727 [debug] [Thread-4 (]: Marking all children of 'model.ecommerce_project.stg_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 153 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql.
+[0m11:00:26.276727 [info ] [Thread-1 (]: 3 of 4 START sql view model analytics.stg_shipments ............................ [RUN]
+[0m11:00:26.279306 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_orders, now model.ecommerce_project.stg_shipments)
+[0m11:00:26.279306 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_shipments
+[0m11:00:26.279306 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_shipments"
+[0m11:00:26.301553 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_shipments
+[0m11:00:26.301553 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_shipments"
+[0m11:00:26.306442 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_shipments"
+[0m11:00:26.306442 [debug] [Thread-1 (]: On model.ecommerce_project.stg_shipments: create or replace   view ECOMMERCE_DB.analytics.stg_shipments
+  
+  
+  
+  
+  as (
+    select * from raw.shipments
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_shipments"} */;
+[0m11:00:26.451463 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be1daa-0001-5e1a-0000-000b57ce394d
+[0m11:00:26.451463 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 8 at position 156 unexpected ';'.
+[0m11:00:26.451463 [debug] [Thread-1 (]: Database Error in model stg_shipments (models\staging\stg_shipments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_shipments.sql
+[0m11:00:26.451463 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e77fe3be-dfe0-4ae6-9673-1391f348eef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C623F0DB70>]}
+[0m11:00:26.451463 [error] [Thread-1 (]: 3 of 4 ERROR creating sql view model analytics.stg_shipments ................... [[31mERROR[0m in 0.17s]
+[0m11:00:26.458180 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_shipments
+[0m11:00:26.459522 [debug] [Thread-4 (]: Marking all children of 'model.ecommerce_project.stg_shipments' to be skipped because of status 'error'.  Reason: Database Error in model stg_shipments (models\staging\stg_shipments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_shipments.sql.
+[0m11:00:26.459522 [debug] [Thread-1 (]: Began running node model.ecommerce_project.order_status
+[0m11:00:26.461491 [info ] [Thread-1 (]: 4 of 4 SKIP relation analytics.order_status .................................... [[33mSKIP[0m]
+[0m11:00:26.461491 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.order_status
+[0m11:00:26.464024 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:00:26.464024 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB' was left open.
+[0m11:00:26.465484 [debug] [MainThread]: On list_ECOMMERCE_DB: Close
+[0m11:00:26.764114 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB_analytics' was left open.
+[0m11:00:26.770374 [debug] [MainThread]: On list_ECOMMERCE_DB_analytics: Close
+[0m11:00:26.873781 [debug] [MainThread]: Connection 'model.ecommerce_project.stg_shipments' was left open.
+[0m11:00:26.873781 [debug] [MainThread]: On model.ecommerce_project.stg_shipments: Close
+[0m11:00:26.971034 [info ] [MainThread]: 
+[0m11:00:26.971034 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 2.56 seconds (2.56s).
+[0m11:00:26.971034 [debug] [MainThread]: Command end result
+[0m11:00:26.996960 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m11:00:27.000832 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m11:00:27.007807 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\run_results.json
+[0m11:00:27.007807 [info ] [MainThread]: 
+[0m11:00:27.007807 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m11:00:27.007807 [info ] [MainThread]: 
+[0m11:00:27.011788 [error] [MainThread]: [31mFailure in model stg_customers (models\staging\stg_customers.sql)[0m
+[0m11:00:27.011788 [error] [MainThread]:   Database Error in model stg_customers (models\staging\stg_customers.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_customers.sql
+[0m11:00:27.011788 [info ] [MainThread]: 
+[0m11:00:27.011788 [info ] [MainThread]:   compiled code at target\compiled\ecommerce_project\models\staging\stg_customers.sql
+[0m11:00:27.014941 [info ] [MainThread]: 
+[0m11:00:27.015485 [error] [MainThread]: [31mFailure in model stg_orders (models\staging\stg_orders.sql)[0m
+[0m11:00:27.015485 [error] [MainThread]:   Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 153 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql
+[0m11:00:27.015485 [info ] [MainThread]: 
+[0m11:00:27.015485 [info ] [MainThread]:   compiled code at target\compiled\ecommerce_project\models\staging\stg_orders.sql
+[0m11:00:27.015485 [info ] [MainThread]: 
+[0m11:00:27.015485 [error] [MainThread]: [31mFailure in model stg_shipments (models\staging\stg_shipments.sql)[0m
+[0m11:00:27.015485 [error] [MainThread]:   Database Error in model stg_shipments (models\staging\stg_shipments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_shipments.sql
+[0m11:00:27.015485 [info ] [MainThread]: 
+[0m11:00:27.023458 [info ] [MainThread]:   compiled code at target\compiled\ecommerce_project\models\staging\stg_shipments.sql
+[0m11:00:27.023895 [info ] [MainThread]: 
+[0m11:00:27.023895 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=1 NO-OP=0 TOTAL=4
+[0m11:00:27.023895 [debug] [MainThread]: Command `dbt run` failed at 11:00:27.023895 after 4.92 seconds
+[0m11:00:27.023895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C625022EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C646CEBDF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6474A08B0>]}
+[0m11:00:27.023895 [debug] [MainThread]: Flushing usage events
+[0m11:00:30.391428 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:02:35.380898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001489E582EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001489F83F970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001489F83F190>]}
+
+
+============================== 11:02:35.384917 | 0a895cfe-6a99-4c0f-a5c0-6447880a7ef9 ==============================
+[0m11:02:35.384917 [info ] [MainThread]: Running with dbt=1.10.6
+[0m11:02:35.386927 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ayush\\.dbt', 'log_path': 'C:\\Users\\ayush\\OneDrive\\Desktop\\E-Commerce Project(Airflow+Snowflake+dbt)\\dbt_ecommerce\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m11:02:36.659539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0a895cfe-6a99-4c0f-a5c0-6447880a7ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001489F876A40>]}
+[0m11:02:36.699599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0a895cfe-6a99-4c0f-a5c0-6447880a7ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000148C022AEF0>]}
+[0m11:02:36.699599 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m11:02:37.242853 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m11:02:37.430980 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:02:37.430980 [debug] [MainThread]: Partial parsing: updated file: ecommerce_project://models\marts\order_status.sql
+[0m11:02:37.669554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0a895cfe-6a99-4c0f-a5c0-6447880a7ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000148C0A4D8A0>]}
+[0m11:02:37.715416 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m11:02:37.732302 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m11:02:37.763159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0a895cfe-6a99-4c0f-a5c0-6447880a7ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000148C0A4D6F0>]}
+[0m11:02:37.763159 [info ] [MainThread]: Found 4 models, 477 macros
+[0m11:02:37.763159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0a895cfe-6a99-4c0f-a5c0-6447880a7ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000148C09FDA80>]}
+[0m11:02:37.766568 [info ] [MainThread]: 
+[0m11:02:37.766568 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:02:37.766568 [info ] [MainThread]: 
+[0m11:02:37.770678 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:02:37.775623 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB'
+[0m11:02:37.860880 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB"
+[0m11:02:37.870858 [debug] [ThreadPool]: On list_ECOMMERCE_DB: show terse schemas in database ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB"} */
+[0m11:02:37.871872 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:02:39.245435 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.383 seconds
+[0m11:02:39.257972 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB_analytics'
+[0m11:02:39.268369 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB_analytics"
+[0m11:02:39.268369 [debug] [ThreadPool]: On list_ECOMMERCE_DB_analytics: show objects in ECOMMERCE_DB.analytics
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB_analytics"} */;
+[0m11:02:39.268369 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:02:40.288519 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.017 seconds
+[0m11:02:40.290062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0a895cfe-6a99-4c0f-a5c0-6447880a7ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001489C523D60>]}
+[0m11:02:40.291600 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_customers
+[0m11:02:40.297248 [info ] [Thread-1 (]: 1 of 4 START sql view model analytics.stg_customers ............................ [RUN]
+[0m11:02:40.297248 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ecommerce_project.stg_customers'
+[0m11:02:40.297248 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_customers
+[0m11:02:40.297248 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_customers"
+[0m11:02:40.297248 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_customers
+[0m11:02:40.330461 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_customers"
+[0m11:02:40.335437 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_customers"
+[0m11:02:40.335437 [debug] [Thread-1 (]: On model.ecommerce_project.stg_customers: create or replace   view ECOMMERCE_DB.analytics.stg_customers
+  
+  
+  
+  
+  as (
+    select * from raw.customers
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_customers"} */;
+[0m11:02:40.337522 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:02:40.801308 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be1dac-0001-5e1a-0000-000b57ce3951
+[0m11:02:40.801308 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 8 at position 156 unexpected ';'.
+[0m11:02:40.801308 [debug] [Thread-1 (]: Database Error in model stg_customers (models\staging\stg_customers.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_customers.sql
+[0m11:02:40.813967 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0a895cfe-6a99-4c0f-a5c0-6447880a7ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000148C1FFB3D0>]}
+[0m11:02:40.817247 [error] [Thread-1 (]: 1 of 4 ERROR creating sql view model analytics.stg_customers ................... [[31mERROR[0m in 0.50s]
+[0m11:02:40.818447 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_customers
+[0m11:02:40.818447 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_orders
+[0m11:02:40.818447 [debug] [Thread-4 (]: Marking all children of 'model.ecommerce_project.stg_customers' to be skipped because of status 'error'.  Reason: Database Error in model stg_customers (models\staging\stg_customers.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_customers.sql.
+[0m11:02:40.822243 [info ] [Thread-1 (]: 2 of 4 START sql view model analytics.stg_orders ............................... [RUN]
+[0m11:02:40.822243 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_customers, now model.ecommerce_project.stg_orders)
+[0m11:02:40.822243 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_orders
+[0m11:02:40.830382 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_orders"
+[0m11:02:40.832407 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_orders
+[0m11:02:40.837603 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_orders"
+[0m11:02:40.839300 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_orders"
+[0m11:02:40.840882 [debug] [Thread-1 (]: On model.ecommerce_project.stg_orders: create or replace   view ECOMMERCE_DB.analytics.stg_orders
+  
+  
+  
+  
+  as (
+    select * from raw.orders
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_orders"} */;
+[0m11:02:40.903194 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be1dac-0001-5e1b-0000-000b57ce26f5
+[0m11:02:40.903194 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 8 at position 153 unexpected ';'.
+[0m11:02:40.903194 [debug] [Thread-1 (]: Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 153 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql
+[0m11:02:40.903194 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0a895cfe-6a99-4c0f-a5c0-6447880a7ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001489D469B70>]}
+[0m11:02:40.903194 [error] [Thread-1 (]: 2 of 4 ERROR creating sql view model analytics.stg_orders ...................... [[31mERROR[0m in 0.08s]
+[0m11:02:40.903194 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_orders
+[0m11:02:40.919080 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_shipments
+[0m11:02:40.919080 [debug] [Thread-4 (]: Marking all children of 'model.ecommerce_project.stg_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 153 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql.
+[0m11:02:40.919080 [info ] [Thread-1 (]: 3 of 4 START sql view model analytics.stg_shipments ............................ [RUN]
+[0m11:02:40.921575 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_orders, now model.ecommerce_project.stg_shipments)
+[0m11:02:40.923331 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_shipments
+[0m11:02:40.927174 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_shipments"
+[0m11:02:40.927174 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_shipments
+[0m11:02:40.932863 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_shipments"
+[0m11:02:40.932863 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_shipments"
+[0m11:02:40.936060 [debug] [Thread-1 (]: On model.ecommerce_project.stg_shipments: create or replace   view ECOMMERCE_DB.analytics.stg_shipments
+  
+  
+  
+  
+  as (
+    select * from raw.shipments
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_shipments"} */;
+[0m11:02:41.008614 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be1dac-0001-5e1a-0000-000b57ce3955
+[0m11:02:41.008614 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 8 at position 156 unexpected ';'.
+[0m11:02:41.008614 [debug] [Thread-1 (]: Database Error in model stg_shipments (models\staging\stg_shipments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_shipments.sql
+[0m11:02:41.008614 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0a895cfe-6a99-4c0f-a5c0-6447880a7ef9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000148C1FFA8C0>]}
+[0m11:02:41.008614 [error] [Thread-1 (]: 3 of 4 ERROR creating sql view model analytics.stg_shipments ................... [[31mERROR[0m in 0.09s]
+[0m11:02:41.008614 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_shipments
+[0m11:02:41.018381 [debug] [Thread-4 (]: Marking all children of 'model.ecommerce_project.stg_shipments' to be skipped because of status 'error'.  Reason: Database Error in model stg_shipments (models\staging\stg_shipments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_shipments.sql.
+[0m11:02:41.018381 [debug] [Thread-1 (]: Began running node model.ecommerce_project.order_status
+[0m11:02:41.018381 [info ] [Thread-1 (]: 4 of 4 SKIP relation analytics.order_status .................................... [[33mSKIP[0m]
+[0m11:02:41.018381 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.order_status
+[0m11:02:41.018381 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:02:41.018381 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB' was left open.
+[0m11:02:41.018381 [debug] [MainThread]: On list_ECOMMERCE_DB: Close
+[0m11:02:41.112830 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB_analytics' was left open.
+[0m11:02:41.113843 [debug] [MainThread]: On list_ECOMMERCE_DB_analytics: Close
+[0m11:02:41.242363 [debug] [MainThread]: Connection 'model.ecommerce_project.stg_shipments' was left open.
+[0m11:02:41.242363 [debug] [MainThread]: On model.ecommerce_project.stg_shipments: Close
+[0m11:02:41.319912 [info ] [MainThread]: 
+[0m11:02:41.319912 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 3.55 seconds (3.55s).
+[0m11:02:41.329285 [debug] [MainThread]: Command end result
+[0m11:02:41.354798 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m11:02:41.358450 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m11:02:41.365372 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\run_results.json
+[0m11:02:41.365372 [info ] [MainThread]: 
+[0m11:02:41.365372 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m11:02:41.369784 [info ] [MainThread]: 
+[0m11:02:41.369784 [error] [MainThread]: [31mFailure in model stg_customers (models\staging\stg_customers.sql)[0m
+[0m11:02:41.371189 [error] [MainThread]:   Database Error in model stg_customers (models\staging\stg_customers.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_customers.sql
+[0m11:02:41.371189 [info ] [MainThread]: 
+[0m11:02:41.371189 [info ] [MainThread]:   compiled code at target\compiled\ecommerce_project\models\staging\stg_customers.sql
+[0m11:02:41.371189 [info ] [MainThread]: 
+[0m11:02:41.371189 [error] [MainThread]: [31mFailure in model stg_orders (models\staging\stg_orders.sql)[0m
+[0m11:02:41.371189 [error] [MainThread]:   Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 153 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql
+[0m11:02:41.371189 [info ] [MainThread]: 
+[0m11:02:41.371189 [info ] [MainThread]:   compiled code at target\compiled\ecommerce_project\models\staging\stg_orders.sql
+[0m11:02:41.376732 [info ] [MainThread]: 
+[0m11:02:41.377651 [error] [MainThread]: [31mFailure in model stg_shipments (models\staging\stg_shipments.sql)[0m
+[0m11:02:41.377651 [error] [MainThread]:   Database Error in model stg_shipments (models\staging\stg_shipments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_shipments.sql
+[0m11:02:41.377651 [info ] [MainThread]: 
+[0m11:02:41.379334 [info ] [MainThread]:   compiled code at target\compiled\ecommerce_project\models\staging\stg_shipments.sql
+[0m11:02:41.379334 [info ] [MainThread]: 
+[0m11:02:41.379334 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=1 NO-OP=0 TOTAL=4
+[0m11:02:41.379334 [debug] [MainThread]: Command `dbt run` failed at 11:02:41.379334 after 6.08 seconds
+[0m11:02:41.379334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001489E582EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000148C0286B30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001489E8AF160>]}
+[0m11:02:41.383749 [debug] [MainThread]: Flushing usage events
+[0m11:02:42.642992 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:10:39.981333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528B842E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528CB7FD60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528CB7FF40>]}
+
+
+============================== 11:10:39.995048 | 36c9b11c-ddaa-4a52-98d1-d4dbca87f914 ==============================
+[0m11:10:39.995048 [info ] [MainThread]: Running with dbt=1.10.6
+[0m11:10:39.997059 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ayush\\.dbt', 'log_path': 'C:\\Users\\ayush\\OneDrive\\Desktop\\E-Commerce Project(Airflow+Snowflake+dbt)\\dbt_ecommerce\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m11:10:41.308157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36c9b11c-ddaa-4a52-98d1-d4dbca87f914', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528BBB0310>]}
+[0m11:10:41.355766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '36c9b11c-ddaa-4a52-98d1-d4dbca87f914', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528CB7E0E0>]}
+[0m11:10:41.355766 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m11:10:41.846621 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m11:10:41.942727 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m11:10:41.942727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '36c9b11c-ddaa-4a52-98d1-d4dbca87f914', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528C2B99C0>]}
+[0m11:10:42.750371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '36c9b11c-ddaa-4a52-98d1-d4dbca87f914', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252ADA3C6A0>]}
+[0m11:10:42.814133 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m11:10:42.814133 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m11:10:42.831441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '36c9b11c-ddaa-4a52-98d1-d4dbca87f914', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252ADCCBDF0>]}
+[0m11:10:42.846002 [info ] [MainThread]: Found 4 models, 477 macros
+[0m11:10:42.846002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '36c9b11c-ddaa-4a52-98d1-d4dbca87f914', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252ADC37BE0>]}
+[0m11:10:42.849000 [info ] [MainThread]: 
+[0m11:10:42.849000 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:10:42.849000 [info ] [MainThread]: 
+[0m11:10:42.849000 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:10:42.849000 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB'
+[0m11:10:42.937012 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB"
+[0m11:10:42.937012 [debug] [ThreadPool]: On list_ECOMMERCE_DB: show terse schemas in database ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB"} */
+[0m11:10:42.937012 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:10:43.652741 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.707 seconds
+[0m11:10:43.652741 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB"
+[0m11:10:43.652741 [debug] [ThreadPool]: On list_ECOMMERCE_DB: show terse schemas in database ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB"} */
+[0m11:10:43.749104 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.095 seconds
+[0m11:10:43.749104 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ECOMMERCE_DB, now create_ECOMMERCE_DB_analytics_raw)
+[0m11:10:43.764916 [debug] [ThreadPool]: Creating schema "database: "ECOMMERCE_DB"
+schema: "analytics_raw"
+"
+[0m11:10:43.858373 [debug] [ThreadPool]: Using snowflake connection "create_ECOMMERCE_DB_analytics_raw"
+[0m11:10:43.858373 [debug] [ThreadPool]: On create_ECOMMERCE_DB_analytics_raw: create schema if not exists ECOMMERCE_DB.analytics_raw
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "create_ECOMMERCE_DB_analytics_raw"} */
+[0m11:10:43.954788 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.094 seconds
+[0m11:10:43.954788 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_ECOMMERCE_DB_analytics_raw, now create_ECOMMERCE_DB_analytics_analytics)
+[0m11:10:43.954788 [debug] [ThreadPool]: Creating schema "database: "ECOMMERCE_DB"
+schema: "analytics_analytics"
+"
+[0m11:10:43.954788 [debug] [ThreadPool]: Using snowflake connection "create_ECOMMERCE_DB_analytics_analytics"
+[0m11:10:43.954788 [debug] [ThreadPool]: On create_ECOMMERCE_DB_analytics_analytics: create schema if not exists ECOMMERCE_DB.analytics_analytics
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "create_ECOMMERCE_DB_analytics_analytics"} */
+[0m11:10:44.050724 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.098 seconds
+[0m11:10:44.050724 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB_analytics_raw'
+[0m11:10:44.065778 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB_analytics_raw"
+[0m11:10:44.065778 [debug] [ThreadPool]: On list_ECOMMERCE_DB_analytics_raw: show objects in ECOMMERCE_DB.analytics_raw
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB_analytics_raw"} */;
+[0m11:10:44.065778 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:10:44.664916 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.590 seconds
+[0m11:10:44.666747 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ECOMMERCE_DB_analytics_raw, now list_ECOMMERCE_DB_analytics_analytics)
+[0m11:10:44.668753 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB_analytics_analytics"
+[0m11:10:44.668753 [debug] [ThreadPool]: On list_ECOMMERCE_DB_analytics_analytics: show objects in ECOMMERCE_DB.analytics_analytics
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB_analytics_analytics"} */;
+[0m11:10:44.763085 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.094 seconds
+[0m11:10:44.765088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '36c9b11c-ddaa-4a52-98d1-d4dbca87f914', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252ADBCA1A0>]}
+[0m11:10:44.767092 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_customers
+[0m11:10:44.767092 [info ] [Thread-1 (]: 1 of 4 START sql view model analytics_raw.stg_customers ........................ [RUN]
+[0m11:10:44.767092 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ecommerce_project.stg_customers'
+[0m11:10:44.767092 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_customers
+[0m11:10:44.776087 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_customers"
+[0m11:10:44.776087 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_customers
+[0m11:10:44.793442 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_customers"
+[0m11:10:44.793442 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_customers"
+[0m11:10:44.807579 [debug] [Thread-1 (]: On model.ecommerce_project.stg_customers: create or replace   view ECOMMERCE_DB.analytics_raw.stg_customers
+  
+  
+  
+  
+  as (
+    select * from raw.customers
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_customers"} */;
+[0m11:10:44.807579 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:10:45.177416 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be1db4-0001-5e1b-0000-000b57ce2771
+[0m11:10:45.177416 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 8 at position 156 unexpected ';'.
+[0m11:10:45.177416 [debug] [Thread-1 (]: Database Error in model stg_customers (models\staging\stg_customers.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_customers.sql
+[0m11:10:45.177416 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36c9b11c-ddaa-4a52-98d1-d4dbca87f914', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528A72DF90>]}
+[0m11:10:45.177416 [error] [Thread-1 (]: 1 of 4 ERROR creating sql view model analytics_raw.stg_customers ............... [[31mERROR[0m in 0.41s]
+[0m11:10:45.177416 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_customers
+[0m11:10:45.177416 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_orders
+[0m11:10:45.177416 [debug] [Thread-4 (]: Marking all children of 'model.ecommerce_project.stg_customers' to be skipped because of status 'error'.  Reason: Database Error in model stg_customers (models\staging\stg_customers.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_customers.sql.
+[0m11:10:45.177416 [info ] [Thread-1 (]: 2 of 4 START sql view model analytics_raw.stg_orders ........................... [RUN]
+[0m11:10:45.177416 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_customers, now model.ecommerce_project.stg_orders)
+[0m11:10:45.177416 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_orders
+[0m11:10:45.194641 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_orders"
+[0m11:10:45.194641 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_orders
+[0m11:10:45.194641 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_orders"
+[0m11:10:45.201716 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_orders"
+[0m11:10:45.201716 [debug] [Thread-1 (]: On model.ecommerce_project.stg_orders: create or replace   view ECOMMERCE_DB.analytics_raw.stg_orders
+  
+  
+  
+  
+  as (
+    select * from raw.orders
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_orders"} */;
+[0m11:10:45.277748 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be1db4-0001-5e1a-0000-000b57ce39ed
+[0m11:10:45.286606 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 8 at position 153 unexpected ';'.
+[0m11:10:45.286606 [debug] [Thread-1 (]: Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 153 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql
+[0m11:10:45.286606 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36c9b11c-ddaa-4a52-98d1-d4dbca87f914', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252ADC67910>]}
+[0m11:10:45.286606 [error] [Thread-1 (]: 2 of 4 ERROR creating sql view model analytics_raw.stg_orders .................. [[31mERROR[0m in 0.11s]
+[0m11:10:45.286606 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_orders
+[0m11:10:45.286606 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_shipments
+[0m11:10:45.286606 [debug] [Thread-4 (]: Marking all children of 'model.ecommerce_project.stg_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 153 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql.
+[0m11:10:45.286606 [info ] [Thread-1 (]: 3 of 4 START sql view model analytics_raw.stg_shipments ........................ [RUN]
+[0m11:10:45.286606 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_orders, now model.ecommerce_project.stg_shipments)
+[0m11:10:45.286606 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_shipments
+[0m11:10:45.286606 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_shipments"
+[0m11:10:45.286606 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_shipments
+[0m11:10:45.302409 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_shipments"
+[0m11:10:45.304259 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_shipments"
+[0m11:10:45.305508 [debug] [Thread-1 (]: On model.ecommerce_project.stg_shipments: create or replace   view ECOMMERCE_DB.analytics_raw.stg_shipments
+  
+  
+  
+  
+  as (
+    select * from raw.shipments
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_shipments"} */;
+[0m11:10:45.387323 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be1db4-0001-5e1b-0000-000b57ce2775
+[0m11:10:45.387323 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 8 at position 156 unexpected ';'.
+[0m11:10:45.387323 [debug] [Thread-1 (]: Database Error in model stg_shipments (models\staging\stg_shipments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_shipments.sql
+[0m11:10:45.387323 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36c9b11c-ddaa-4a52-98d1-d4dbca87f914', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252ADCC0EB0>]}
+[0m11:10:45.387323 [error] [Thread-1 (]: 3 of 4 ERROR creating sql view model analytics_raw.stg_shipments ............... [[31mERROR[0m in 0.10s]
+[0m11:10:45.387323 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_shipments
+[0m11:10:45.387323 [debug] [Thread-4 (]: Marking all children of 'model.ecommerce_project.stg_shipments' to be skipped because of status 'error'.  Reason: Database Error in model stg_shipments (models\staging\stg_shipments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_shipments.sql.
+[0m11:10:45.387323 [debug] [Thread-1 (]: Began running node model.ecommerce_project.order_status
+[0m11:10:45.387323 [info ] [Thread-1 (]: 4 of 4 SKIP relation analytics_analytics.order_status .......................... [[33mSKIP[0m]
+[0m11:10:45.387323 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.order_status
+[0m11:10:45.387323 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:10:45.387323 [debug] [MainThread]: Connection 'create_ECOMMERCE_DB_analytics_analytics' was left open.
+[0m11:10:45.387323 [debug] [MainThread]: On create_ECOMMERCE_DB_analytics_analytics: Close
+[0m11:10:45.502556 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB_analytics_analytics' was left open.
+[0m11:10:45.519298 [debug] [MainThread]: On list_ECOMMERCE_DB_analytics_analytics: Close
+[0m11:10:45.614856 [debug] [MainThread]: Connection 'model.ecommerce_project.stg_shipments' was left open.
+[0m11:10:45.629430 [debug] [MainThread]: On model.ecommerce_project.stg_shipments: Close
+[0m11:10:45.787881 [info ] [MainThread]: 
+[0m11:10:45.787881 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 2.94 seconds (2.94s).
+[0m11:10:45.787881 [debug] [MainThread]: Command end result
+[0m11:10:45.820613 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m11:10:45.827130 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m11:10:45.841632 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\run_results.json
+[0m11:10:45.841632 [info ] [MainThread]: 
+[0m11:10:45.841632 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m11:10:45.841632 [info ] [MainThread]: 
+[0m11:10:45.841632 [error] [MainThread]: [31mFailure in model stg_customers (models\staging\stg_customers.sql)[0m
+[0m11:10:45.841632 [error] [MainThread]:   Database Error in model stg_customers (models\staging\stg_customers.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_customers.sql
+[0m11:10:45.848075 [info ] [MainThread]: 
+[0m11:10:45.848745 [info ] [MainThread]:   compiled code at target\compiled\ecommerce_project\models\staging\stg_customers.sql
+[0m11:10:45.848745 [info ] [MainThread]: 
+[0m11:10:45.848745 [error] [MainThread]: [31mFailure in model stg_orders (models\staging\stg_orders.sql)[0m
+[0m11:10:45.848745 [error] [MainThread]:   Database Error in model stg_orders (models\staging\stg_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 153 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_orders.sql
+[0m11:10:45.848745 [info ] [MainThread]: 
+[0m11:10:45.848745 [info ] [MainThread]:   compiled code at target\compiled\ecommerce_project\models\staging\stg_orders.sql
+[0m11:10:45.848745 [info ] [MainThread]: 
+[0m11:10:45.848745 [error] [MainThread]: [31mFailure in model stg_shipments (models\staging\stg_shipments.sql)[0m
+[0m11:10:45.855133 [error] [MainThread]:   Database Error in model stg_shipments (models\staging\stg_shipments.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 8 at position 156 unexpected ';'.
+  compiled code at target\run\ecommerce_project\models\staging\stg_shipments.sql
+[0m11:10:45.856177 [info ] [MainThread]: 
+[0m11:10:45.856177 [info ] [MainThread]:   compiled code at target\compiled\ecommerce_project\models\staging\stg_shipments.sql
+[0m11:10:45.856177 [info ] [MainThread]: 
+[0m11:10:45.856177 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=1 NO-OP=0 TOTAL=4
+[0m11:10:45.856177 [debug] [MainThread]: Command `dbt run` failed at 11:10:45.856177 after 5.95 seconds
+[0m11:10:45.861633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528B842E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002528BB7DD20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252ADC57D60>]}
+[0m11:10:45.862681 [debug] [MainThread]: Flushing usage events
+[0m11:10:46.832574 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:11:56.667679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AE3172F20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AE4433880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AE4431360>]}
+
+
+============================== 11:11:56.684817 | cc5a5ff4-f5d6-4d63-b9cc-54f29efd5650 ==============================
+[0m11:11:56.684817 [info ] [MainThread]: Running with dbt=1.10.6
+[0m11:11:56.684817 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ayush\\.dbt', 'debug': 'False', 'warn_error': 'False', 'log_path': 'C:\\Users\\ayush\\OneDrive\\Desktop\\E-Commerce Project(Airflow+Snowflake+dbt)\\dbt_ecommerce\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:11:57.978685 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cc5a5ff4-f5d6-4d63-b9cc-54f29efd5650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AE0F2E200>]}
+[0m11:11:58.027327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cc5a5ff4-f5d6-4d63-b9cc-54f29efd5650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A84EBB9D0>]}
+[0m11:11:58.032174 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m11:11:58.463186 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m11:11:58.650529 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m11:11:58.650529 [debug] [MainThread]: Partial parsing: updated file: ecommerce_project://models\staging\stg_customers.sql
+[0m11:11:58.650529 [debug] [MainThread]: Partial parsing: updated file: ecommerce_project://models\staging\stg_orders.sql
+[0m11:11:58.650529 [debug] [MainThread]: Partial parsing: updated file: ecommerce_project://models\staging\stg_shipments.sql
+[0m11:11:58.856204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cc5a5ff4-f5d6-4d63-b9cc-54f29efd5650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A856D5E40>]}
+[0m11:11:58.903908 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m11:11:58.903908 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m11:11:58.936911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cc5a5ff4-f5d6-4d63-b9cc-54f29efd5650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A856B5000>]}
+[0m11:11:58.936911 [info ] [MainThread]: Found 4 models, 477 macros
+[0m11:11:58.936911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cc5a5ff4-f5d6-4d63-b9cc-54f29efd5650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A856B6CB0>]}
+[0m11:11:58.936911 [info ] [MainThread]: 
+[0m11:11:58.936911 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:11:58.936911 [info ] [MainThread]: 
+[0m11:11:58.936911 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:11:58.955046 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB'
+[0m11:11:59.039004 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB"
+[0m11:11:59.039004 [debug] [ThreadPool]: On list_ECOMMERCE_DB: show terse schemas in database ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB"} */
+[0m11:11:59.039004 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:11:59.585736 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.552 seconds
+[0m11:11:59.585736 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB"
+[0m11:11:59.585736 [debug] [ThreadPool]: On list_ECOMMERCE_DB: show terse schemas in database ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB"} */
+[0m11:11:59.666087 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.067 seconds
+[0m11:11:59.666087 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB_analytics_raw'
+[0m11:11:59.666087 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB_analytics_raw"
+[0m11:11:59.681143 [debug] [ThreadPool]: On list_ECOMMERCE_DB_analytics_raw: show objects in ECOMMERCE_DB.analytics_raw
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB_analytics_raw"} */;
+[0m11:11:59.681143 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:12:00.329943 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.658 seconds
+[0m11:12:00.329943 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ECOMMERCE_DB_analytics_raw, now list_ECOMMERCE_DB_analytics_analytics)
+[0m11:12:00.329943 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB_analytics_analytics"
+[0m11:12:00.329943 [debug] [ThreadPool]: On list_ECOMMERCE_DB_analytics_analytics: show objects in ECOMMERCE_DB.analytics_analytics
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB_analytics_analytics"} */;
+[0m11:12:00.516150 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.176 seconds
+[0m11:12:00.516150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cc5a5ff4-f5d6-4d63-b9cc-54f29efd5650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A85031C00>]}
+[0m11:12:00.516150 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_customers
+[0m11:12:00.516150 [info ] [Thread-1 (]: 1 of 4 START sql view model analytics_raw.stg_customers ........................ [RUN]
+[0m11:12:00.516150 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ecommerce_project.stg_customers'
+[0m11:12:00.531951 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_customers
+[0m11:12:00.531951 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_customers"
+[0m11:12:00.531951 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_customers
+[0m11:12:00.552148 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_customers"
+[0m11:12:00.563899 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_customers"
+[0m11:12:00.563899 [debug] [Thread-1 (]: On model.ecommerce_project.stg_customers: create or replace   view ECOMMERCE_DB.analytics_raw.stg_customers
+  
+  
+  
+  
+  as (
+    select * from raw.customers
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_customers"} */;
+[0m11:12:00.563899 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:12:01.226397 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.664 seconds
+[0m11:12:01.242164 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cc5a5ff4-f5d6-4d63-b9cc-54f29efd5650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AE0EF8610>]}
+[0m11:12:01.242164 [info ] [Thread-1 (]: 1 of 4 OK created sql view model analytics_raw.stg_customers ................... [[32mSUCCESS 1[0m in 0.73s]
+[0m11:12:01.242164 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_customers
+[0m11:12:01.242164 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_orders
+[0m11:12:01.242164 [info ] [Thread-1 (]: 2 of 4 START sql view model analytics_raw.stg_orders ........................... [RUN]
+[0m11:12:01.242164 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_customers, now model.ecommerce_project.stg_orders)
+[0m11:12:01.242164 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_orders
+[0m11:12:01.242164 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_orders"
+[0m11:12:01.259106 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_orders
+[0m11:12:01.261599 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_orders"
+[0m11:12:01.261599 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_orders"
+[0m11:12:01.261599 [debug] [Thread-1 (]: On model.ecommerce_project.stg_orders: create or replace   view ECOMMERCE_DB.analytics_raw.stg_orders
+  
+  
+  
+  
+  as (
+    select * from raw.orders
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_orders"} */;
+[0m11:12:01.539937 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.279 seconds
+[0m11:12:01.539937 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cc5a5ff4-f5d6-4d63-b9cc-54f29efd5650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A8555F4F0>]}
+[0m11:12:01.539937 [info ] [Thread-1 (]: 2 of 4 OK created sql view model analytics_raw.stg_orders ...................... [[32mSUCCESS 1[0m in 0.30s]
+[0m11:12:01.539937 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_orders
+[0m11:12:01.539937 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_shipments
+[0m11:12:01.539937 [info ] [Thread-1 (]: 3 of 4 START sql view model analytics_raw.stg_shipments ........................ [RUN]
+[0m11:12:01.539937 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_orders, now model.ecommerce_project.stg_shipments)
+[0m11:12:01.539937 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_shipments
+[0m11:12:01.539937 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_shipments"
+[0m11:12:01.556044 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_shipments
+[0m11:12:01.560245 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_shipments"
+[0m11:12:01.560245 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_shipments"
+[0m11:12:01.560245 [debug] [Thread-1 (]: On model.ecommerce_project.stg_shipments: create or replace   view ECOMMERCE_DB.analytics_raw.stg_shipments
+  
+  
+  
+  
+  as (
+    select * from raw.shipments
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_shipments"} */;
+[0m11:12:01.769234 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.205 seconds
+[0m11:12:01.770271 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cc5a5ff4-f5d6-4d63-b9cc-54f29efd5650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A8555F4F0>]}
+[0m11:12:01.770271 [info ] [Thread-1 (]: 3 of 4 OK created sql view model analytics_raw.stg_shipments ................... [[32mSUCCESS 1[0m in 0.23s]
+[0m11:12:01.770271 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_shipments
+[0m11:12:01.770271 [debug] [Thread-1 (]: Began running node model.ecommerce_project.order_status
+[0m11:12:01.770271 [info ] [Thread-1 (]: 4 of 4 START sql view model analytics_analytics.order_status ................... [RUN]
+[0m11:12:01.770271 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_shipments, now model.ecommerce_project.order_status)
+[0m11:12:01.770271 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.order_status
+[0m11:12:01.770271 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.order_status"
+[0m11:12:01.770271 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.order_status
+[0m11:12:01.785873 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.order_status"
+[0m11:12:01.786770 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.order_status"
+[0m11:12:01.788928 [debug] [Thread-1 (]: On model.ecommerce_project.order_status: create or replace   view ECOMMERCE_DB.analytics_analytics.order_status
+  
+  
+  
+  
+  as (
+    WITH base AS (
+  SELECT 
+    o.order_id, 
+    c.name AS customer_name, 
+    o.order_date, 
+    s.status,
+    s.shipped_at, 
+    s.delivered_at,
+    DATEDIFF('hour', s.shipped_at, s.delivered_at) AS delivery_hours
+  FROM ECOMMERCE_DB.analytics_raw.stg_orders o
+  JOIN ECOMMERCE_DB.analytics_raw.stg_shipments s ON o.order_id = s.order_id
+  JOIN ECOMMERCE_DB.analytics_raw.stg_customers c ON o.customer_id = c.customer_id
+)
+
+SELECT *,
+       CASE 
+         WHEN status = 'shipped' AND delivery_hours > 48 THEN 'DELAYED' 
+         ELSE status 
+       END AS final_status
+FROM base
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.order_status"} */;
+[0m11:12:02.159500 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.382 seconds
+[0m11:12:02.176476 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cc5a5ff4-f5d6-4d63-b9cc-54f29efd5650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A85693100>]}
+[0m11:12:02.178051 [info ] [Thread-1 (]: 4 of 4 OK created sql view model analytics_analytics.order_status .............. [[32mSUCCESS 1[0m in 0.41s]
+[0m11:12:02.179632 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.order_status
+[0m11:12:02.181214 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:12:02.181214 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB' was left open.
+[0m11:12:02.182778 [debug] [MainThread]: On list_ECOMMERCE_DB: Close
+[0m11:12:02.355449 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB_analytics_analytics' was left open.
+[0m11:12:02.355449 [debug] [MainThread]: On list_ECOMMERCE_DB_analytics_analytics: Close
+[0m11:12:02.466703 [debug] [MainThread]: Connection 'model.ecommerce_project.order_status' was left open.
+[0m11:12:02.466703 [debug] [MainThread]: On model.ecommerce_project.order_status: Close
+[0m11:12:02.566191 [info ] [MainThread]: 
+[0m11:12:02.566191 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 3.63 seconds (3.63s).
+[0m11:12:02.566191 [debug] [MainThread]: Command end result
+[0m11:12:02.740179 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m11:12:02.740179 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m11:12:02.754285 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\run_results.json
+[0m11:12:02.754285 [info ] [MainThread]: 
+[0m11:12:02.754285 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:12:02.754285 [info ] [MainThread]: 
+[0m11:12:02.754285 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m11:12:02.754285 [debug] [MainThread]: Command `dbt run` succeeded at 11:12:02.754285 after 6.16 seconds
+[0m11:12:02.754285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AE3172F20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A856BC8B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029AE04E2410>]}
+[0m11:12:02.754285 [debug] [MainThread]: Flushing usage events
+[0m11:12:04.046786 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:21:41.982663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213AA852EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213AAB223E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213ABB0D8D0>]}
+
+
+============================== 11:21:41.982663 | e701ce81-05ca-4127-bae2-e4b888807402 ==============================
+[0m11:21:41.982663 [info ] [MainThread]: Running with dbt=1.10.6
+[0m11:21:41.989669 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ayush\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\ayush\\OneDrive\\Desktop\\E-Commerce Project(Airflow+Snowflake+dbt)\\dbt_ecommerce\\logs', 'warn_error': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m11:21:43.353697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e701ce81-05ca-4127-bae2-e4b888807402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213ABB46E90>]}
+[0m11:21:43.417327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e701ce81-05ca-4127-bae2-e4b888807402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213CC4DF850>]}
+[0m11:21:43.419954 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m11:21:43.894960 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m11:21:43.991505 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m11:21:43.991505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e701ce81-05ca-4127-bae2-e4b888807402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213AB2C5000>]}
+[0m11:21:44.922579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e701ce81-05ca-4127-bae2-e4b888807402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213CC9B10C0>]}
+[0m11:21:44.991387 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m11:21:44.995485 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m11:21:45.017201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e701ce81-05ca-4127-bae2-e4b888807402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213CCC9AA10>]}
+[0m11:21:45.017201 [info ] [MainThread]: Found 4 models, 477 macros
+[0m11:21:45.032239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e701ce81-05ca-4127-bae2-e4b888807402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213CCC08E80>]}
+[0m11:21:45.035217 [info ] [MainThread]: 
+[0m11:21:45.035217 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:21:45.038120 [info ] [MainThread]: 
+[0m11:21:45.038120 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:21:45.047720 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB'
+[0m11:21:45.150472 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB"
+[0m11:21:45.150472 [debug] [ThreadPool]: On list_ECOMMERCE_DB: show terse schemas in database ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB"} */
+[0m11:21:45.150472 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:21:45.857165 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.705 seconds
+[0m11:21:45.857165 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB_analytics'
+[0m11:21:45.871488 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB_analytics"
+[0m11:21:45.871488 [debug] [ThreadPool]: On list_ECOMMERCE_DB_analytics: show objects in ECOMMERCE_DB.analytics
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB_analytics"} */;
+[0m11:21:45.871488 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:21:46.329864 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.453 seconds
+[0m11:21:46.329864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e701ce81-05ca-4127-bae2-e4b888807402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213A9252650>]}
+[0m11:21:46.329864 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_customers
+[0m11:21:46.329864 [info ] [Thread-1 (]: 1 of 4 START sql view model analytics.stg_customers ............................ [RUN]
+[0m11:21:46.344925 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ecommerce_project.stg_customers'
+[0m11:21:46.344925 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_customers
+[0m11:21:46.344925 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_customers"
+[0m11:21:46.344925 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_customers
+[0m11:21:46.376599 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_customers"
+[0m11:21:46.376599 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_customers"
+[0m11:21:46.376599 [debug] [Thread-1 (]: On model.ecommerce_project.stg_customers: create or replace   view ECOMMERCE_DB.analytics.stg_customers
+  
+  
+  
+  
+  as (
+    select * from raw.customers
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_customers"} */;
+[0m11:21:46.376599 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:21:46.929855 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.543 seconds
+[0m11:21:46.951446 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e701ce81-05ca-4127-bae2-e4b888807402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213CE25A560>]}
+[0m11:21:46.952453 [info ] [Thread-1 (]: 1 of 4 OK created sql view model analytics.stg_customers ....................... [[32mSUCCESS 1[0m in 0.62s]
+[0m11:21:46.954001 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_customers
+[0m11:21:46.954001 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_orders
+[0m11:21:46.954001 [info ] [Thread-1 (]: 2 of 4 START sql view model analytics.stg_orders ............................... [RUN]
+[0m11:21:46.955521 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_customers, now model.ecommerce_project.stg_orders)
+[0m11:21:46.955521 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_orders
+[0m11:21:46.958595 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_orders"
+[0m11:21:46.960139 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_orders
+[0m11:21:46.962713 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_orders"
+[0m11:21:46.966706 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_orders"
+[0m11:21:46.966706 [debug] [Thread-1 (]: On model.ecommerce_project.stg_orders: create or replace   view ECOMMERCE_DB.analytics.stg_orders
+  
+  
+  
+  
+  as (
+    select * from raw.orders
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_orders"} */;
+[0m11:21:47.230873 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.262 seconds
+[0m11:21:47.232880 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e701ce81-05ca-4127-bae2-e4b888807402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213A973C640>]}
+[0m11:21:47.232880 [info ] [Thread-1 (]: 2 of 4 OK created sql view model analytics.stg_orders .......................... [[32mSUCCESS 1[0m in 0.28s]
+[0m11:21:47.232880 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_orders
+[0m11:21:47.232880 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_shipments
+[0m11:21:47.232880 [info ] [Thread-1 (]: 3 of 4 START sql view model analytics.stg_shipments ............................ [RUN]
+[0m11:21:47.232880 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_orders, now model.ecommerce_project.stg_shipments)
+[0m11:21:47.232880 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_shipments
+[0m11:21:47.232880 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_shipments"
+[0m11:21:47.232880 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_shipments
+[0m11:21:47.232880 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_shipments"
+[0m11:21:47.245724 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_shipments"
+[0m11:21:47.247110 [debug] [Thread-1 (]: On model.ecommerce_project.stg_shipments: create or replace   view ECOMMERCE_DB.analytics.stg_shipments
+  
+  
+  
+  
+  as (
+    select * from raw.shipments
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_shipments"} */;
+[0m11:21:47.468090 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.222 seconds
+[0m11:21:47.468090 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e701ce81-05ca-4127-bae2-e4b888807402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213CCC67730>]}
+[0m11:21:47.474511 [info ] [Thread-1 (]: 3 of 4 OK created sql view model analytics.stg_shipments ....................... [[32mSUCCESS 1[0m in 0.24s]
+[0m11:21:47.474511 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_shipments
+[0m11:21:47.474511 [debug] [Thread-1 (]: Began running node model.ecommerce_project.order_status
+[0m11:21:47.474511 [info ] [Thread-1 (]: 4 of 4 START sql view model analytics.order_status ............................. [RUN]
+[0m11:21:47.474511 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_shipments, now model.ecommerce_project.order_status)
+[0m11:21:47.474511 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.order_status
+[0m11:21:47.483532 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.order_status"
+[0m11:21:47.484695 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.order_status
+[0m11:21:47.486694 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.order_status"
+[0m11:21:47.493046 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.order_status"
+[0m11:21:47.494028 [debug] [Thread-1 (]: On model.ecommerce_project.order_status: create or replace   view ECOMMERCE_DB.analytics.order_status
+  
+  
+  
+  
+  as (
+    WITH base AS (
+  SELECT o.order_id, c.name AS customer_name, o.order_date, s.status,
+         s.shipped_at, s.delivered_at,
+         DATEDIFF('hour', s.shipped_at, s.delivered_at) AS delivery_hours
+  FROM ECOMMERCE_DB.analytics.stg_orders o
+  JOIN ECOMMERCE_DB.analytics.stg_shipments s ON o.order_id = s.order_id
+  JOIN ECOMMERCE_DB.analytics.stg_customers c ON o.customer_id = c.customer_id
+)
+
+SELECT *,
+       CASE WHEN status = 'shipped' AND delivery_hours > 48 THEN 'DELAYED' ELSE status END AS final_status
+FROM base
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.order_status"} */;
+[0m11:21:47.851629 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.357 seconds
+[0m11:21:47.853637 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e701ce81-05ca-4127-bae2-e4b888807402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213CC722FB0>]}
+[0m11:21:47.854642 [info ] [Thread-1 (]: 4 of 4 OK created sql view model analytics.order_status ........................ [[32mSUCCESS 1[0m in 0.38s]
+[0m11:21:47.854642 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.order_status
+[0m11:21:47.854642 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:21:47.854642 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB' was left open.
+[0m11:21:47.854642 [debug] [MainThread]: On list_ECOMMERCE_DB: Close
+[0m11:21:48.062221 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB_analytics' was left open.
+[0m11:21:48.062221 [debug] [MainThread]: On list_ECOMMERCE_DB_analytics: Close
+[0m11:21:48.170254 [debug] [MainThread]: Connection 'model.ecommerce_project.order_status' was left open.
+[0m11:21:48.170254 [debug] [MainThread]: On model.ecommerce_project.order_status: Close
+[0m11:21:48.282438 [info ] [MainThread]: 
+[0m11:21:48.282438 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 3.24 seconds (3.24s).
+[0m11:21:48.282438 [debug] [MainThread]: Command end result
+[0m11:21:48.314376 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m11:21:48.314376 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m11:21:48.314376 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\run_results.json
+[0m11:21:48.314376 [info ] [MainThread]: 
+[0m11:21:48.330461 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:21:48.330461 [info ] [MainThread]: 
+[0m11:21:48.331898 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m11:21:48.331898 [debug] [MainThread]: Command `dbt run` succeeded at 11:21:48.331898 after 6.46 seconds
+[0m11:21:48.333707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213AA852EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213AAB7E4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213ABB46E90>]}
+[0m11:21:48.334789 [debug] [MainThread]: Flushing usage events
+[0m11:21:49.327945 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:27:50.815257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205FD6C2EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205FE97E290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205FE97F190>]}
+
+
+============================== 11:27:50.820005 | 7b8217b5-d58a-414f-b8a4-b21d15955bc3 ==============================
+[0m11:27:50.820005 [info ] [MainThread]: Running with dbt=1.10.6
+[0m11:27:50.823907 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ayush\\.dbt', 'log_path': 'C:\\Users\\ayush\\OneDrive\\Desktop\\E-Commerce Project(Airflow+Snowflake+dbt)\\dbt_ecommerce\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:27:52.610690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7b8217b5-d58a-414f-b8a4-b21d15955bc3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002059F401BD0>]}
+[0m11:27:52.723760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7b8217b5-d58a-414f-b8a4-b21d15955bc3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002059F3BAEF0>]}
+[0m11:27:52.732025 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m11:27:53.526937 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m11:27:53.796841 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:27:53.796841 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:27:53.843919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7b8217b5-d58a-414f-b8a4-b21d15955bc3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002059FA1DFC0>]}
+[0m11:27:53.958920 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m11:27:53.963895 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m11:27:54.011508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7b8217b5-d58a-414f-b8a4-b21d15955bc3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002059FA15C00>]}
+[0m11:27:54.011508 [info ] [MainThread]: Found 4 models, 477 macros
+[0m11:27:54.014018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7b8217b5-d58a-414f-b8a4-b21d15955bc3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002059FA159F0>]}
+[0m11:27:54.014018 [info ] [MainThread]: 
+[0m11:27:54.017514 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:27:54.018807 [info ] [MainThread]: 
+[0m11:27:54.019816 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:27:54.028260 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB'
+[0m11:27:54.207328 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB"
+[0m11:27:54.208959 [debug] [ThreadPool]: On list_ECOMMERCE_DB: show terse schemas in database ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB"} */
+[0m11:27:54.208959 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:28:02.333755 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 8.125 seconds
+[0m11:28:02.337304 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_DB_analytics'
+[0m11:28:02.366405 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_DB_analytics"
+[0m11:28:02.366405 [debug] [ThreadPool]: On list_ECOMMERCE_DB_analytics: show objects in ECOMMERCE_DB.analytics
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "connection_name": "list_ECOMMERCE_DB_analytics"} */;
+[0m11:28:02.366405 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:28:02.965942 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.599 seconds
+[0m11:28:02.965942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7b8217b5-d58a-414f-b8a4-b21d15955bc3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205FB661870>]}
+[0m11:28:02.975075 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_customers
+[0m11:28:02.975075 [info ] [Thread-1 (]: 1 of 4 START sql view model analytics.stg_customers ............................ [RUN]
+[0m11:28:02.981903 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ecommerce_project.stg_customers'
+[0m11:28:02.983976 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_customers
+[0m11:28:02.998039 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_customers"
+[0m11:28:03.001087 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_customers
+[0m11:28:03.054132 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_customers"
+[0m11:28:03.058695 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_customers"
+[0m11:28:03.058695 [debug] [Thread-1 (]: On model.ecommerce_project.stg_customers: create or replace   view ECOMMERCE_DB.analytics.stg_customers
+  
+  
+  
+  
+  as (
+    select * from raw.customers
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_customers"} */;
+[0m11:28:03.061610 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:28:03.659659 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.598 seconds
+[0m11:28:03.705954 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7b8217b5-d58a-414f-b8a4-b21d15955bc3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205FB44C5B0>]}
+[0m11:28:03.705954 [info ] [Thread-1 (]: 1 of 4 OK created sql view model analytics.stg_customers ....................... [[32mSUCCESS 1[0m in 0.72s]
+[0m11:28:03.710416 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_customers
+[0m11:28:03.711425 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_orders
+[0m11:28:03.711425 [info ] [Thread-1 (]: 2 of 4 START sql view model analytics.stg_orders ............................... [RUN]
+[0m11:28:03.714043 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_customers, now model.ecommerce_project.stg_orders)
+[0m11:28:03.714043 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_orders
+[0m11:28:03.719243 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_orders"
+[0m11:28:03.723979 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_orders
+[0m11:28:03.725416 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_orders"
+[0m11:28:03.733705 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_orders"
+[0m11:28:03.735953 [debug] [Thread-1 (]: On model.ecommerce_project.stg_orders: create or replace   view ECOMMERCE_DB.analytics.stg_orders
+  
+  
+  
+  
+  as (
+    select * from raw.orders
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_orders"} */;
+[0m11:28:03.983991 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.248 seconds
+[0m11:28:03.990298 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7b8217b5-d58a-414f-b8a4-b21d15955bc3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002059FFC8820>]}
+[0m11:28:04.006969 [info ] [Thread-1 (]: 2 of 4 OK created sql view model analytics.stg_orders .......................... [[32mSUCCESS 1[0m in 0.28s]
+[0m11:28:04.006969 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_orders
+[0m11:28:04.009922 [debug] [Thread-1 (]: Began running node model.ecommerce_project.stg_shipments
+[0m11:28:04.010997 [info ] [Thread-1 (]: 3 of 4 START sql view model analytics.stg_shipments ............................ [RUN]
+[0m11:28:04.010997 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_orders, now model.ecommerce_project.stg_shipments)
+[0m11:28:04.013711 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.stg_shipments
+[0m11:28:04.018787 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.stg_shipments"
+[0m11:28:04.021168 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.stg_shipments
+[0m11:28:04.023691 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.stg_shipments"
+[0m11:28:04.023691 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.stg_shipments"
+[0m11:28:04.031265 [debug] [Thread-1 (]: On model.ecommerce_project.stg_shipments: create or replace   view ECOMMERCE_DB.analytics.stg_shipments
+  
+  
+  
+  
+  as (
+    select * from raw.shipments
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.stg_shipments"} */;
+[0m11:28:04.288208 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.256 seconds
+[0m11:28:04.292871 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7b8217b5-d58a-414f-b8a4-b21d15955bc3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205FB44C5B0>]}
+[0m11:28:04.294410 [info ] [Thread-1 (]: 3 of 4 OK created sql view model analytics.stg_shipments ....................... [[32mSUCCESS 1[0m in 0.28s]
+[0m11:28:04.296895 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.stg_shipments
+[0m11:28:04.298657 [debug] [Thread-1 (]: Began running node model.ecommerce_project.order_status
+[0m11:28:04.298657 [info ] [Thread-1 (]: 4 of 4 START sql view model analytics.order_status ............................. [RUN]
+[0m11:28:04.301721 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_project.stg_shipments, now model.ecommerce_project.order_status)
+[0m11:28:04.303903 [debug] [Thread-1 (]: Began compiling node model.ecommerce_project.order_status
+[0m11:28:04.310562 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_project.order_status"
+[0m11:28:04.313766 [debug] [Thread-1 (]: Began executing node model.ecommerce_project.order_status
+[0m11:28:04.320714 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_project.order_status"
+[0m11:28:04.325954 [debug] [Thread-1 (]: Using snowflake connection "model.ecommerce_project.order_status"
+[0m11:28:04.325954 [debug] [Thread-1 (]: On model.ecommerce_project.order_status: create or replace   view ECOMMERCE_DB.analytics.order_status
+  
+  
+  
+  
+  as (
+    WITH base AS (
+  SELECT o.order_id, c.name AS customer_name, o.order_date, s.status,
+         s.shipped_at, s.delivered_at,
+         DATEDIFF('hour', s.shipped_at, s.delivered_at) AS delivery_hours
+  FROM ECOMMERCE_DB.analytics.stg_orders o
+  JOIN ECOMMERCE_DB.analytics.stg_shipments s ON o.order_id = s.order_id
+  JOIN ECOMMERCE_DB.analytics.stg_customers c ON o.customer_id = c.customer_id
+)
+
+SELECT *,
+       CASE WHEN status = 'shipped' AND delivery_hours > 48 THEN 'DELAYED' ELSE status END AS final_status
+FROM base
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "ecommerce_project", "target_name": "dev", "node_id": "model.ecommerce_project.order_status"} */;
+[0m11:28:04.788449 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.463 seconds
+[0m11:28:04.796656 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7b8217b5-d58a-414f-b8a4-b21d15955bc3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205A1124790>]}
+[0m11:28:04.796656 [info ] [Thread-1 (]: 4 of 4 OK created sql view model analytics.order_status ........................ [[32mSUCCESS 1[0m in 0.49s]
+[0m11:28:04.798666 [debug] [Thread-1 (]: Finished running node model.ecommerce_project.order_status
+[0m11:28:04.801687 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:28:04.801687 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB' was left open.
+[0m11:28:04.803702 [debug] [MainThread]: On list_ECOMMERCE_DB: Close
+[0m11:28:04.898559 [debug] [MainThread]: Connection 'list_ECOMMERCE_DB_analytics' was left open.
+[0m11:28:04.898559 [debug] [MainThread]: On list_ECOMMERCE_DB_analytics: Close
+[0m11:28:04.999802 [debug] [MainThread]: Connection 'model.ecommerce_project.order_status' was left open.
+[0m11:28:05.001253 [debug] [MainThread]: On model.ecommerce_project.order_status: Close
+[0m11:28:05.108861 [info ] [MainThread]: 
+[0m11:28:05.108861 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 11.09 seconds (11.09s).
+[0m11:28:05.114220 [debug] [MainThread]: Command end result
+[0m11:28:05.154289 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\manifest.json
+[0m11:28:05.163896 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\semantic_manifest.json
+[0m11:28:05.177419 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce\target\run_results.json
+[0m11:28:05.179430 [info ] [MainThread]: 
+[0m11:28:05.179430 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:28:05.181442 [info ] [MainThread]: 
+[0m11:28:05.181442 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m11:28:05.183952 [debug] [MainThread]: Command `dbt run` succeeded at 11:28:05.183952 after 14.48 seconds
+[0m11:28:05.183952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205FD6C2EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002059F402B30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002059FA2FC70>]}
+[0m11:28:05.183952 [debug] [MainThread]: Flushing usage events
+[0m11:28:06.940909 [debug] [MainThread]: An error was encountered while trying to flush usage events
