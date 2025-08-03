@@ -1,0 +1,4 @@
+# Ignore all Airflow logs
+airflow_docker/logs/
+airflow_project/logs/
+*.log

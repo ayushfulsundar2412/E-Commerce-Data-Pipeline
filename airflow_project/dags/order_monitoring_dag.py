@@ -78,12 +78,12 @@ with DAG(
 
     dbt_run = BashOperator(
         task_id='run_dbt_models',
-        bash_command='source "C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\airflow_venv_39\Scripts\activate" && cd "C:\Users\ayush\OneDrive\Desktop\E-Commerce Project(Airflow+Snowflake+dbt)\dbt_ecommerce" && dbt run'
+        bash_command='cd /opt/airflow/dbt_ecommerce && dbt run'
     )
 
     check_orders = BashOperator(
         task_id='check_delayed_orders',
-        bash_command='source "/Users/zafarimam/Documents/E-Commerce Order Pipeline/airflow_venv_39/bin/activate" && python "/Users/zafarimam/Documents/E-Commerce Order Pipeline/airflow_project/dags/utils/check_delayed_orders.py"'
+        bash_command='python /opt/airflow/dags/utils/check_delayed_orders.py'
     )
 
     dbt_run >> check_orders
