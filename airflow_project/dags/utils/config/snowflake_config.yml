@@ -1,0 +1,9 @@
+snowflake:
+  user: AYUSHFULSUNDAR24
+  password: Ayushful@123456
+  account: XAXKNSR-HW11441
+  warehouse: COMPUTE_WH
+  database: ECOMMERCE_DB
+  schema: analytics
+  role: ACCOUNTADMIN
+
